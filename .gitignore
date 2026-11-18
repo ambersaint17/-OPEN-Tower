@@ -1,0 +1,13 @@
+node_modules/
+.env
+.env.*
+!.env.example
+tower.config.json
+*.log
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+# Your own banner images stay on your machine; the repository ships none.
+assets/images/*.png
+!assets/images/partner-mute-guide.png

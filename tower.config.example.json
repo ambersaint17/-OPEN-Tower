@@ -1,0 +1,41 @@
+{
+  "_readme": "Copy this file to tower.config.json and keep only what you want to change. Anything you leave out keeps its default from src/constants.js. Keys starting with an underscore are ignored.",
+
+  "brand": { "name": "Your Bot Name" },
+
+  "staff": {
+    "staffRole": "Staff",
+    "leadershipRoles": ["Administrator", "Co-Owner"],
+    "teams": [
+      {
+        "key": "moderation", "label": "Moderation Team", "teamRole": "Moderation Team",
+        "ranks": [
+          { "key": "trial", "role": "Trial Moderator" },
+          { "key": "moderator", "role": "Moderator" },
+          { "key": "head", "role": "Head Moderator" }
+        ]
+      }
+    ]
+  },
+
+  "moderation": {
+    "ranks": [
+      { "role": "Trial Moderator", "level": 1 },
+      { "role": "Moderator", "level": 2 },
+      { "role": "Head Moderator", "level": 3 },
+      { "role": "Administrator", "level": 4 },
+      { "role": "Co-Owner", "level": 4 }
+    ]
+  },
+
+  "tickets": {
+    "maxOpenPerMember": 2,
+    "types": {
+      "support": { "label": "General Support", "description": "Questions and help from our moderators" }
+    }
+  },
+
+  "colors": { "cobalt": 2838468 },
+
+  "youtube": { "pollMs": 300000 }
+}
